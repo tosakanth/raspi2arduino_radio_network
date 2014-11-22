@@ -3,10 +3,7 @@ To build a simple radio wireless network by using of <a href="http://arduino-inf
 
 
 
-<h3>What you need to install on Raspberry PI before going on.</h3>
-1. RPi.GPIO from https://pypi.python.org/pypi/RPi.GPIO
-2. Py-spidev from https://github.com/doceme/py-spidev
-I've modified original nrf24.py from https://github.com/jpbarraca/pynrf24/blob/master/nrf24.py to be suitable for Raspberry PI and RPi.GPIO.
+
 
 <h3>Wiring </h3>
 This may be changed depends on your Arduino Model.
@@ -36,3 +33,8 @@ This may be changed depends on your Arduino Model.
 <tr><td>MISO</td><td>GPIO 9 (pin 21)</td></tr>
 <tr><td>IRQ</td><td>GPIO 18 (pin 12)</td></tr>
 </table>
+
+<h3>What you need to install on Raspberry PI before going on.</h3>
+1. RPi.GPIO from https://pypi.python.org/pypi/RPi.GPIO
+2. Py-spidev from https://github.com/doceme/py-spidev
+I've modified original nrf24.py from https://github.com/jpbarraca/pynrf24/blob/master/nrf24.py to be suitable for Raspberry PI and RPi.GPIO.
