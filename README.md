@@ -33,7 +33,7 @@ This may be changed depends on your Arduino Model.<br/>
 <h3>What you need to install on Raspberry PI before going on.</h3>
 1. RPi.GPIO from https://pypi.python.org/pypi/RPi.GPIO
 2. Py-spidev from https://github.com/doceme/py-spidev
-I've modified original nrf24.py from https://github.com/jpbarraca/pynrf24/blob/master/nrf24.py to be suitable for Raspberry PI and RPi.GPIO.
+<b>Note</b> : I've modified original nrf24.py from https://github.com/jpbarraca/pynrf24/blob/master/nrf24.py to be suitable for Raspberry PI (originally designed for Beaglebone Black) and RPi.GPIO (originally utilizes Adafruit_BBIO.GPIO) .
 
 <h3>Install Arduino's library</h3>
 There are a few NRF24L01 libraries available but I have not found the differences among them and I prefer to use from maniacbug. Get the library from <a href="https://github.com/maniacbug/RF24">here</a> and intall it to your Arduino IDE (visit <a href="http://arduino-info.wikispaces.com/Arduino-Libraries">here</a> if you do not know how to install libraries).
