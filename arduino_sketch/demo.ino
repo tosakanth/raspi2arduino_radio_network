@@ -40,8 +40,8 @@ void setup(void){
   radio.setRetries(15,15);
   
   radio.setChannel(70);
-  radio.openReadingPipe(1,pipes[1]);
-  radio.openWritingPipe(pipes[0]);
+  radio.openReadingPipe(1,pipes[0]);
+  radio.openWritingPipe(pipes[1]);
 
   /*For this demo, Arduino takes default role as listener.*/
   radio.startListening();  
@@ -49,13 +49,27 @@ void setup(void){
   /*To show up details*/
   radio.printDetails();
 }
-String a ="";
+
 
 void loop(void){
   
   if (radio.available()){
-    Serial.println("Incomming.");
-    
+    bool done=false;
+    char msg_buf[20];
+    while (!done){
+      done=radio.read(msg_buf,sizeof(msg_buf));
+    }
+    String pi_msg = String(msg_buf);
+    Serial.println(pi_msg);
+    sendReply()
   }
   delay(100);
+}
+
+void sendReply(){
+  char msg[20]="I am arduino";
+  radio.stopListening();
+  bool ok = radio.write(&msg,sizeof(msg));
+  radio.startListening();  
+
 }
