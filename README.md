@@ -1,15 +1,11 @@
 <h1>Radio Network for Raspberry PI and Arduino</h1>
 To build a simple radio wireless network by using of <a href="http://arduino-info.wikispaces.com/Nrf24L01-2.4GHz-HowTo">NRF24L01 Plus</a> module.
 
-
-
-
-
 <h3>Wiring </h3>
-This may be changed depends on your Arduino Model.
+This may be changed depends on your Arduino Model.<br/>
 
 <img src="http://arduino-info.wikispaces.com/file/view/24L01Pinout-800.jpg/243330999/24L01Pinout-800.jpg">
-
+<br/>
 <table align="center">
 <tr><th>NRF24L01 Plus</th><th>Arduino Mega 2560</th></tr>
 <tr><td>VCC</td><td>3.3V</td></tr>
@@ -21,7 +17,7 @@ This may be changed depends on your Arduino Model.
 <tr><td>MISO</td><td>50</td></tr>
 <tr><td>IRQ</td><td>No use</td></tr>
 </table>
-
+<br/>
 <table align="center">
 <tr><th>NRF24L01 Plus</th><th>Raspberry PI</th></tr>
 <tr><td>VCC</td><td>3.3V (pin 1)</td></tr>
