@@ -37,3 +37,11 @@ This may be changed depends on your Arduino Model.<br/>
 
 <h3>Install Arduino's library</h3>
 There are a few NRF24L01 libraries available but I have not found the differences among them and I prefer to use from maniacbug. Get the library from <a href="https://github.com/maniacbug/RF24">here</a> and intall it to your Arduino IDE (visit <a href="http://arduino-info.wikispaces.com/Arduino-Libraries">here</a> if you do not know how to install libraries).
+
+<h3>To test them all</h3>
+1. Prepare your devices and wire them all.
+2. Down load all python files, put them somewhere on your Raspberry PI.
+3. Compile and flash Arduino sketch.
+4. on Raspberry PI type sudo python pi_demo.py
+5. See the result.
+ 
