@@ -4,7 +4,7 @@ import time
 radio = P2PNetwork()
 radio.start()
 radio.showDetails()
-msg='1234567890'
+msg='I am RasPi'
 try:
   while True:
     radio.send_msg(msg)
