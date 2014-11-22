@@ -65,10 +65,10 @@ class P2PNetwork:
 		return res
 		
 		
-	def get_msg(self,from_addr=None):
+	def get_msg(self,from_addr=[]):
 		if self.radio == None :
 			return
-		if from_addr is not None:	
+		if from_addr != []:	
 			self.radio.openReadingPipe(self.reading_child,from_addr)	
 		self.radio.startListening()	
 		pipe=[1]
