@@ -3,7 +3,7 @@ import time
 
 class P2PNetwork:
 	
-	def __init__(self,spi_major=0,spi_minor=0,ce_pin=25,irq_pin=18,write_pipe = [0xbd, 0xfb, 0xeb, 0x76, 0x58],read_pipe= [0xbd, 0xfb, 0xeb, 0x76, 0x66]):
+	def __init__(self,spi_major=0,spi_minor=0,ce_pin=25,irq_pin=18,write_pipe = [0xF0, 0xF0, 0xF0, 0xF0, 0xA1],read_pipe= [0xF0, 0xF0, 0xF0, 0xF0, 0xA2]):
 		
 		self.spi_major=spi_major
 		self.spi_minor=spi_minor
