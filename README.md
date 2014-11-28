@@ -45,3 +45,6 @@ There are a few NRF24L01 libraries available but I have not found the difference
 4. on Raspberry PI type sudo python pi_demo.py
 5. See the result.
  
+<b>Notes :</b>
+1. The address must be 40 bits (8 Bytes)
+2. NRF24L01 can listen to 6 other noes at the same time. All writers should share first 4 bytes (32 bits) of their addresses.
