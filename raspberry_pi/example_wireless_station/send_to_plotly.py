@@ -1,4 +1,4 @@
-from nrf24_wrapper import TK_RADIO
+from NRF24L01_wrapper import TK_RADIO
 from time import gmtime,strftime
 import plotly.plotly as py # plotly library
 from plotly.graph_objs import Scatter, Layout, Figure # plotly graph objects
